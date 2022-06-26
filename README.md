@@ -24,6 +24,14 @@ This project has two screens.
 - "pillow" module -- pip install pillow  ---> for using images in app
 - "pyinstaller" module -- pip install pyinstaller ---> to convert .py file into .exe file
 
+# Code Insights:
+- main.py and main.pyw are same programs. It contains the main control flow and imported modules
+- addBusStop.py contains a list variable "addBusStop_list" which extracts data from busStops.csv
+- addStopsIn_busStopsCSV.py code is used to extract all bus stops from data.csv and writing it in busStops.csv
+- data.csv contains arranged order of data such that (IP address, bus number plate, bus serial number, bus stop 1, bus stop 1 timing, bus stop 2, bus stop 2 timing, . . . . , bus stop N, bus stop N timing)
+- busStops.csv contains every bus stop names in ascending order
+
 # Note:
 - .pyw extension is used for ignoring the command screen while working with .exe file
 - It works as same as .py extension, and no affect to the code
+- Since it's a complete working prototype, the future work includes the GPS tracker, web server, Google APIs and UI-UX
